@@ -61,7 +61,7 @@ hr {
 .food {
   background-color: #d1f195;
   border-radius: 2px;
-  transform: translateY(50%);
+  transform: translate(50%, 50%);
 }
 
 .score {

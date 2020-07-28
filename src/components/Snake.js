@@ -210,7 +210,7 @@ class Snake extends React.Component {
                 {this.props.demo ? <></> : <Score score = {this.state.score} />}
                 {parts}
                 {food}
-                <hr style = {{top: this.ycells * cellsize, opacity: this.props.demo ? 0 : 1}} />
+                <hr style = {{top: this.ycells * cellsize || 0, opacity: this.props.demo ? 0 : 1}} />
             </div>
         );
     };
