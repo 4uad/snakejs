@@ -35,6 +35,8 @@ class Snake extends React.Component {
         this.move = this.move.bind(this);
         this.control = this.control.bind(this);
 
+        this.changingDir = false; // has the user changed direction since the last movement?
+
         // if the window size changes, grid cell size changes too
         window.addEventListener('resize', this.updateWindowDimensions);
         // handles W, A, S, D so snake can be controlled
@@ -97,7 +99,7 @@ class Snake extends React.Component {
 
     control(e) { // handle key stroke
         const key = e.key.toLowerCase();
-        if(['w', 'a', 's', 'd'].indexOf(key) > -1) {
+        if(['w', 'a', 's', 'd'].indexOf(key) > -1 && !this.changingDir) { // if player has already changed direction since the last movement, ignore.
 
             // translate w, a, s, d to coordinates
 
@@ -110,6 +112,8 @@ class Snake extends React.Component {
                 this.setState({ // define the new direction according to these coordinates
                     dir: newDirs
                 })
+
+                this.changingDir = true;
             }
         }
     }
@@ -146,7 +150,7 @@ class Snake extends React.Component {
 
             // check if new head position is already part of the snake
             if(searchForArray(newPos, newHead) > -1) {
-                this.props.gameover(); // if it is, the snake hit itself -> game over
+                this.props.gameover(this.state.score); // if it is, the snake hit itself -> game over
             }
         }
 
@@ -160,6 +164,8 @@ class Snake extends React.Component {
         }
 
         newPos.unshift(newHead); // add the new head as the first position
+
+        this.changingDir = false;
 
         this.setState({
             pos: newPos,
