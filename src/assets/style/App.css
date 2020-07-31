@@ -107,3 +107,29 @@ hr {
 .numinput .inputarr:last-of-type {
   bottom: 5px;
 }
+
+.nomob {
+  display: none;
+  color: #eb99bd;
+  font-weight: bold;
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50%);
+  padding: 0 20px;
+}
+
+.nomob span {
+  transform: rotateZ(90deg);
+  font-size: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .App * {
+    display: none;
+  }
+
+  .nomob, .nomob * {
+    display: block;
+  }
+
+}

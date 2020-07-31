@@ -53,6 +53,11 @@ class App extends React.Component {
 
     return(
       <div className={"App" + (this.state.playing ? " playing" : "")}>
+        <div className = "nomob">
+          <span>:(</span><br />
+          Snake is not mobile-friendly yet...<br />
+          But it's 100% worth switching on your laptop :)
+        </div>
         <img className = "title" src = {this.state.gameover? gameover : header} alt = {this.state.gameover? "game over" : "snake"} /><br />
         <br />
 
