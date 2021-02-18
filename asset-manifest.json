@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/snakejs/static/css/main.c3c1cde3.chunk.css",
+    "main.js": "/snakejs/static/js/main.b4e34274.chunk.js",
+    "main.js.map": "/snakejs/static/js/main.b4e34274.chunk.js.map",
+    "runtime-main.js": "/snakejs/static/js/runtime-main.8d9bdb68.js",
+    "runtime-main.js.map": "/snakejs/static/js/runtime-main.8d9bdb68.js.map",
+    "static/js/2.ee292406.chunk.js": "/snakejs/static/js/2.ee292406.chunk.js",
+    "static/js/2.ee292406.chunk.js.map": "/snakejs/static/js/2.ee292406.chunk.js.map",
+    "index.html": "/snakejs/index.html",
+    "precache-manifest.d5898d0ce0c6eb57ef2090d01f8526ea.js": "/snakejs/precache-manifest.d5898d0ce0c6eb57ef2090d01f8526ea.js",
+    "service-worker.js": "/snakejs/service-worker.js",
+    "static/css/main.c3c1cde3.chunk.css.map": "/snakejs/static/css/main.c3c1cde3.chunk.css.map",
+    "static/js/2.ee292406.chunk.js.LICENSE.txt": "/snakejs/static/js/2.ee292406.chunk.js.LICENSE.txt",
+    "static/media/wasd.png": "/snakejs/static/media/wasd.ba9166f5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d9bdb68.js",
+    "static/js/2.ee292406.chunk.js",
+    "static/css/main.c3c1cde3.chunk.css",
+    "static/js/main.b4e34274.chunk.js"
+  ]
+}
