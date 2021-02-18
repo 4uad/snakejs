@@ -1,4 +1,4 @@
-**LIVE DEMO:** https://stormy-anchorage-27160.herokuapp.com/
+<h4 align="center"><a href="https://4uad.github.io/snakejs" target="__blank">▶️ Demo</a></h4>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
